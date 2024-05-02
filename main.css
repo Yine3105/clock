@@ -1,5 +1,5 @@
 h2 {
-    color: white;
+    color: #bee8f9;
 }
 *, *::after, *::before {
     box-sizing: border-box;
@@ -7,7 +7,7 @@ h2 {
     padding: 0;
 }
 body {
-    background-color: #cdb4db;
+    background-color: #03045e;
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -28,7 +28,7 @@ body {
     color: var(--white);
 }
 .clockface {
-    filter: drop-shadow(2px 10px 10px #bde0fe);
+    filter: drop-shadow(2px 10px 10px #bee8f9);
 }
 .ring--seconds {
     fill: #bde0fe;
