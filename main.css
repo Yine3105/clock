@@ -49,3 +49,17 @@ body {
     stroke: white; 
     stroke-width: 2.5;
 }
+.hand {
+    stroke: white;
+    stroke-linecap: round;
+}
+.hand--hours {
+    transform:rotate(45deg);
+    stroke-width: 5;
+    stroke:#fffefe;
+}
+.hand--minute {
+    stroke:#fffefe
+    transform:rotate(90deg);
+    stroke-width: 5;
+}
