@@ -25,7 +25,7 @@ body {
     display: grid;
     place-items: center;
     gap: 2rem;
-    color: var(--white);
+    color: white;
 }
 .clockface {
     filter: drop-shadow(2px 10px 10px #bee8f9);
@@ -54,12 +54,21 @@ body {
     stroke-linecap: round;
 }
 .hand--hours {
-    transform:rotate(45deg);
+    transform: rotate(45deg);
     stroke-width: 5;
     stroke:#fffefe;
 }
 .hand--minute {
-    stroke:#fffefe
-    transform:rotate(90deg);
+    stroke:#fffefe;
+    transform: rotate(90deg);
     stroke-width: 5;
+}
+.date {
+    fill:#fffefe;
+    font-size: 1.5rem;
+}
+.am-pm {
+    fill:black;
+    font-size: .8rem;
+    text-transform: uppercase;
 }
