@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="main.css">
+        <script src="java.js" type="module"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,125 @@
     </head>
     <body>
         <main>
-            <div class="co">
-                <div class="clock--wrapper">
-                    <h2>Time</h2>
-                    <div class="clock">
-                        <svg class="clockface" width="300" height="300" 
+            <div class="contaier">
+                <div class="clock" id="clock1">
+                    <h2>Ha Noi (Vietnam)</h2>
+                    <svg class="clockface" width="300" height="300" 
                         viewBox="-150 -150 300 300">
                             <circle class="ring
                             ring--seconds" cx="0" cy="0" r="145" 
-                             pathlength="60" />
+                            pathlength="60" />
                             <circle class="ring
                             ring--hours" cx="0" cy="0" r="145"
                             pathlength="12" />
-                            <circle class="ring
-                            ring--center" cx="0" cy="0" r="3"/>
+                            <text x="24" y="-5" class="date">23</text>
+                            <text x="50" y="10" class="am-pm">am</text>
                             <line class="hand
                             hand--minute" x1="0" y1="2" 
                             x2="0" y2="-110"/>
                             <line class="hand
                             hand--hours" x1="0" y1="2" 
                             x2="0" y2="-60"/>
+                            <circle class="ring
+                            ring--center" r="3"/>
                             <line class="hand
                             hand--second" x1="0" y1="12" 
                             x2="0" y2="-130"/>
                         </svg>
+                    <div class="face">
+                        <div class="hand hour" id="hour1"></div>
+                        <div class="hand minute" id="minute1"></div>
+                        <div class="hand second" id="second1"></div>
+                    </div>
+                </div>
+                <div class="clock" id="clock2">
+                    <h2>Seoul (Korea)</h2>
+                    <svg class="clockface" width="300" height="300" 
+                        viewBox="-150 -150 300 300">
+                            <circle class="ring
+                            ring--seconds" cx="0" cy="0" r="145" 
+                            pathlength="60" />
+                            <circle class="ring
+                            ring--hours" cx="0" cy="0" r="145"
+                            pathlength="12" />
+                            <text x="24" y="-5" class="date">23</text>
+                            <text x="50" y="10" class="am-pm">am</text>
+                            <line class="hand
+                            hand--minute" x1="0" y1="2" 
+                            x2="0" y2="-110"/>
+                            <line class="hand
+                            hand--hours" x1="0" y1="2" 
+                            x2="0" y2="-60"/>
+                            <circle class="ring
+                            ring--center" r="3"/>
+                            <line class="hand
+                            hand--second" x1="0" y1="12" 
+                            x2="0" y2="-130"/>
+                        </svg>
+                    <div class="face">
+                        <div class="hand hour" id="hour2"></div>
+                        <div class="hand minute" id="minute2"></div>
+                        <div class="hand second" id="second2"></div>
+                    </div>
+                </div>
+                <div class="clock" id="clock3">
+                    <h2>Sydney (Australia)</h2>
+                    <svg class="clockface" width="300" height="300" 
+                        viewBox="-150 -150 300 300">
+                            <circle class="ring
+                            ring--seconds" cx="0" cy="0" r="145" 
+                            pathlength="60" />
+                            <circle class="ring
+                            ring--hours" cx="0" cy="0" r="145"
+                            pathlength="12" />
+                            <text x="24" y="-5" class="date">23</text>
+                            <text x="50" y="10" class="am-pm">am</text>
+                            <line class="hand
+                            hand--minute" x1="0" y1="2" 
+                            x2="0" y2="-110"/>
+                            <line class="hand
+                            hand--hours" x1="0" y1="2" 
+                            x2="0" y2="-60"/>
+                            <circle class="ring
+                            ring--center" r="3"/>
+                            <line class="hand
+                            hand--second" x1="0" y1="12" 
+                            x2="0" y2="-130"/>
+                        </svg>
+                    <div class="face">
+                        <div class="hand hour" id="hour3"></div>
+                        <div class="hand minute" id="minute3"></div>
+                        <div class="hand second" id="second3"></div>
+                    </div>
+                </div>
+                <div class="clock" id="clock4">
+                    <h2>Paris (France)</h2>
+                    <svg class="clockface" width="300" height="300" 
+                        viewBox="-150 -150 300 300">
+                            <circle class="ring
+                            ring--seconds" cx="0" cy="0" r="145" 
+                            pathlength="60" />
+                            <circle class="ring
+                            ring--hours" cx="0" cy="0" r="145"
+                            pathlength="12" />
+                            <text x="24" y="-5" class="date">23</text>
+                            <text x="50" y="10" class="am-pm">am</text>
+                            <line class="hand
+                            hand--minute" x1="0" y1="2" 
+                            x2="0" y2="-110"/>
+                            <line class="hand
+                            hand--hours" x1="0" y1="2" 
+                            x2="0" y2="-60"/>
+                            <circle class="ring
+                            ring--center" r="3"/>
+                            <line class="hand
+                            hand--second" x1="0" y1="12" 
+                            x2="0" y2="-130"/>
+                        </svg>
+                    <div class="face">
+                        <div class="hand hour" id="hour4"></div>
+                        <div class="hand minute" id="minute4"></div>
+                        <div class="hand second" id="second4"></div>
                     </div>
                 </div>
             </div>
