@@ -17,11 +17,11 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 4rem;
-    margin: 1rem;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
 }
-.clock--wrapper {
+.clock {
     display: grid;
     place-items: center;
     gap: 2rem;
@@ -68,7 +68,7 @@ body {
     font-size: 1.5rem;
 }
 .am-pm {
-    fill:black;
+    fill: #fffefe;
     font-size: .8rem;
     text-transform: uppercase;
 }
